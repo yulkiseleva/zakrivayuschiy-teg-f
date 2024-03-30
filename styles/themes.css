@@ -4,3 +4,56 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --background-color: #FFF;
+    --accent-color: #000;
+    --font-weight-heading: 700;
+    --font-weight-text: 400;
+    --heart-contour-color: #000;
+    --background-image: repeating-linear-gradient(to right, #d3d3d3, transparent 2px), repeating-linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A 4px);
+}
+
+.theme-light .button__text {
+  color: var(--background-color);
+}
+
+.theme-light .footer__floppy {
+  fill: var(--background-color);
+}
+
+:root.theme-dark {
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --font-weight-heading: 785;
+    --font-weight-text: 465;
+    --heart-contour-color: #00CC14;
+    --background-image: repeating-linear-gradient(to right, #000, transparent 2px), repeating-linear-gradient(to bottom, #007F0C, #004306 2px);
+}
+
+.theme-dark .button__text {
+    color: var(--accent-color);
+  }
+
+.theme-dark .footer__floppy {
+    fill: var(--accent-color);
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --accent-color: #00CC14;
+        --heart-contour-color: #00CC14;
+        --font-weight-heading: 785;
+        --font-weight-text: 465;
+        --background-image: repeating-linear-gradient(to right, #000, transparent 2px), repeating-linear-gradient(to bottom, #007F0C, #004306 2px);
+    }
+    
+    .button__text {
+        color: var(--accent-color);
+      }
+    
+    .footer__floppy {
+        fill: var(--accent-color);
+      }
+}

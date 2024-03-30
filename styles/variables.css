@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --accent-font: 'Press Start 2P', sans-serif;
+    --text-font: 'Inter-Variable', Inter, sans-serif;
+    --font-weight-heading: 700;
+    --font-weight-text: 400;
+    --small-font-size: 14px;
+    --main-font-size: 18px; 
+    --background-color: #FFF;
+    --accent-color: #000;
+    --heart-contour-color: #000;
+    --heart-fill-color: #FF0000;
+    --cards-gap: 54px;
+    --background-image: repeating-linear-gradient(to right, #d3d3d3, transparent 2px), repeating-linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A 4px);
+    --content-inline-size: clamp(23.438rem, 16.3739rem + 30.1401vw, 43.5rem);
+}
+
+
+@media (width <= 375px) {
+    :root {
+      --content-inline-size: 100%; 
+      --cards-gap: 50px;
+    }
+  }
