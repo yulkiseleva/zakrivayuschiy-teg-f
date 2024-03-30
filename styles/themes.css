@@ -11,15 +11,12 @@
     --font-weight-heading: 700;
     --font-weight-text: 400;
     --heart-contour-color: #000;
-    --background-image: repeating-linear-gradient(to right, #d3d3d3, transparent 2px), repeating-linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A 4px);
-}
-
-.theme-light .button__text {
-  color: var(--background-color);
-}
-
-.theme-light .footer__floppy {
-  fill: var(--background-color);
+    --heart-fill-color: #FF0000;
+    --button-text-color: #FFF;
+    --bg-vertical-color: #d3d3d3;
+    --bg-horizontal-color-start: #e7e7e7;
+    --bg-horizontal-color-end: #1a1a1a;
+    --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
 
 :root.theme-dark {
@@ -28,32 +25,26 @@
     --font-weight-heading: 785;
     --font-weight-text: 465;
     --heart-contour-color: #00CC14;
-    --background-image: repeating-linear-gradient(to right, #000, transparent 2px), repeating-linear-gradient(to bottom, #007F0C, #004306 2px);
+    --heart-fill-color: #FF0000;
+    --button-text-color: #00CC14;
+    --bg-vertical-color: #000;
+    --bg-horizontal-color-start: #007f0c;
+    --bg-horizontal-color-end: #004306;   
+    --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
 }
-
-.theme-dark .button__text {
-    color: var(--accent-color);
-  }
-
-.theme-dark .footer__floppy {
-    fill: var(--accent-color);
-  }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #000;
         --accent-color: #00CC14;
         --heart-contour-color: #00CC14;
+        --heart-fill-color: #FF0000;
+        --button-text-color: #00CC14;
+        --bg-vertical-color: #000;
+        --bg-horizontal-color-start: #007f0c;
+        --bg-horizontal-color-end: #004306;
         --font-weight-heading: 785;
         --font-weight-text: 465;
-        --background-image: repeating-linear-gradient(to right, #000, transparent 2px), repeating-linear-gradient(to bottom, #007F0C, #004306 2px);
+        --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
     }
-    
-    .button__text {
-        color: var(--accent-color);
-      }
-    
-    .footer__floppy {
-        fill: var(--accent-color);
-      }
 }
