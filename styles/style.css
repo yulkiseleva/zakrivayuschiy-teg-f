@@ -160,7 +160,7 @@
   border-block-end: 2px solid var(--accent-color);
 }
 
-.image-car-contrast{
+.image-car-contrast {
   filter: contrast(130%) saturate(80%);
 }
 
